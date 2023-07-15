@@ -1,0 +1,24 @@
+@use "../mixins" as m;
+.site-header {
+  padding-top: 23px;
+}
+.site-header__wrapper {
+  @include m.layout(space-between, center);
+}
+.site-header__navigation {
+}
+.nav {
+}
+.nav__list {
+  @include m.unstyled-list;
+}
+.nav__item {
+}
+.nav__link {
+}
+.site-header__link-box {
+}
+.site-header__phone-number {
+}
+.site-header__bonus-link {
+}
