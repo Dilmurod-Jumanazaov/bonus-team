@@ -41,9 +41,3 @@
   transition-duration: 0.3s;
   transition-timing-function: ease;
 }
-
-@mixin responsive($miw) {
-  @media only screen and (min-width: $miw) {
-    @content;
-  }
-}

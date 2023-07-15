@@ -1,3 +1,5 @@
+@use "veriables" as v;
+
 /* General styles */
 
 * {
@@ -12,9 +14,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
-  // font-family: v.$main-ff;
-  // font-weight: v.$main-fw;
-  // background-color: v.$main-color;
+  font-family: v.$main-ff;
 }
 
 img {
