@@ -1,0 +1,26 @@
+@use "../mixins" as m;
+
+.sell {
+  padding-top: 76px;
+  padding-bottom: 75px;
+  color: #101010;
+  background-color: #e7dfd8;
+}
+
+.sell__inner {
+  display: flex;
+  align-items: center;
+  column-gap: 106px;
+}
+
+.sell__subtitle {
+  @include m.default-text(15px, 54px, $lh:58px);
+}
+
+.sell__desc-wrapper {
+
+}
+
+.sell__desc {
+  line-height: 22px;
+}

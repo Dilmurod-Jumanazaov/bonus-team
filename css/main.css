@@ -325,8 +325,51 @@ img {
 }
 
 .container {
-  max-width: 1140px;
+  max-width: 1192px;
   width: 100%;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: none;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.sell {
+  padding-top: 76px;
+  padding-bottom: 75px;
+  color: #101010;
+  background-color: #e7dfd8;
+}
+
+.sell__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 106px;
+     -moz-column-gap: 106px;
+          column-gap: 106px;
+}
+
+.sell__subtitle {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 54px;
+  font-weight: 400;
+  line-height: 58px;
+  letter-spacing: normal;
+}
+
+.sell__desc {
+  line-height: 22px;
 }/*# sourceMappingURL=main.css.map */
