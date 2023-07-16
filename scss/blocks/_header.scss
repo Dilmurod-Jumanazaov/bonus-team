@@ -1,10 +1,7 @@
 @use "../mixins" as m;
 .site-header {
-}
-.site-header__wrapper {
-}
-.site-header {
   padding-top: 23px;
+  padding-bottom: 364px;
 }
 .site-header__wrapper {
   @include m.layout(space-between, center);
@@ -15,14 +12,38 @@
 }
 .nav__list {
   @include m.unstyled-list;
+  @include m.layout(start, center);
+  padding-left: 114px;
 }
-.nav__item {
+.nav__item:not(:last-child) {
+  margin-right: 32px;
 }
 .nav__link {
+  font-size: 11px;
+  line-height: 24px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--main-text-color);
+  text-decoration: none;
 }
 .site-header__link-box {
+  display: flex;
+  align-items: center;
 }
 .site-header__phone-number {
+  margin-right: 38px;
+  font-size: 11px;
+  line-height: 24px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--main-text-color);
+  text-decoration: none;
 }
 .site-header__bonus-link {
+  font-size: 11px;
+  line-height: 24px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--main-text-color);
+  text-decoration: none;
 }
