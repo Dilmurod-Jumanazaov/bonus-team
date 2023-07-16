@@ -227,10 +227,6 @@ img {
   list-style: none;
 }
 
-.hero {
-  background-image: url("/images/herobgimg.png");
-}
-
 .container {
   max-width: 1140px;
   width: 100%;
