@@ -2,7 +2,6 @@
 
 .sell {
   padding-top: 76px;
-  padding-bottom: 75px;
   color: #101010;
   background-color: #e7dfd8;
 }
@@ -11,6 +10,7 @@
   display: flex;
   align-items: center;
   column-gap: 106px;
+  padding-bottom: 75px;
 }
 
 .sell__subtitle {
@@ -18,9 +18,109 @@
 }
 
 .sell__desc-wrapper {
-
+  max-width: 452px;
 }
 
 .sell__desc {
+  margin: 0;
   line-height: 22px;
+}
+
+.sell__inner:nth-child(2) {
+  flex-direction: row-reverse;
+  column-gap: 116px;
+  padding-top: 130px;
+  padding-bottom: 101px;
+}
+
+.sell__inner:not(:first-child) .sell__subtitle {
+  margin-bottom: 11px;
+  font-size: 35px;
+  line-height: 45.632px;
+  letter-spacing: 1px;
+}
+.sell__inner:nth-child(2) .sell__text {
+  margin-top: 85px;
+}
+
+.sell__deatils {
+  max-width: 494px;
+}
+
+.sell__summary {
+  display: inline-block;
+  margin-bottom: 45px;
+  font-size: 12px;
+  line-height: 30px;
+  letter-spacing: 2px;
+  border-bottom: 2px solid #101010;
+  list-style: none;
+  cursor: pointer;
+  transition: transforfm;
+  &::after {
+    display: inline-block;
+    width: 11px;
+    height: 12px;
+    margin-left: 10px;
+    margin-right: 17px;
+    background-image: url("../../images/arrow.svg");
+    content: "";
+  }
+}
+
+.sell__summary + .sell__desc {
+  font-size: 14px;
+  line-height: 22.08px;
+}
+
+.sell__bonus {
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+  font-size: 19px;
+  line-height: 36px;
+  &::before {
+    @include m.layout(center);
+    width: 74px;
+    height: 74px;
+    margin-right: 12px;
+    color: #101010;
+    font-size: 38px;
+    line-height: 24px;
+    text-align: center;
+    background-color: #b99fea;
+    border-radius: 50%;
+    content: "01";
+  }
+}
+
+.sell__inner:nth-child(3) {
+  column-gap: 139px;
+  padding-top: 124px;
+  padding-bottom: 101px;
+}
+
+.sell__inner:nth-child(3) .sell__bonus::before{
+  background-color: #eba789;
+  content: "2";
+}
+
+.sell__inner:nth-child(3) .sell__text {
+  margin-top: 68px;
+}
+
+.sell__inner:last-child {
+  flex-direction: row-reverse;
+  column-gap: 117px;
+  padding-top: 124px;
+  padding-bottom: 101px;
+}
+
+.sell__inner:last-child .sell__bonus::before {
+  background-color: #96dbc6;
+  content: "3";
+}
+
+.sell__inner:last-child .sell__text {
+  margin-top: 68px;
 }
