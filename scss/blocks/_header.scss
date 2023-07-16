@@ -1,12 +1,25 @@
+<<<<<<< HEAD
 .site-header {
 }
 .site-header__wrapper {
+=======
+@use "../mixins" as m;
+.site-header {
+  padding-top: 23px;
+}
+.site-header__wrapper {
+  @include m.layout(space-between, center);
+>>>>>>> header
 }
 .site-header__navigation {
 }
 .nav {
 }
 .nav__list {
+<<<<<<< HEAD
+=======
+  @include m.unstyled-list;
+>>>>>>> header
 }
 .nav__item {
 }
