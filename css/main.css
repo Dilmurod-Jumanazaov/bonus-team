@@ -253,6 +253,13 @@ img {
   text-transform: uppercase;
   color: var(--main-text-color);
   text-decoration: none;
+  -webkit-transition: color 0.4s ease;
+  transition: color 0.4s ease;
+}
+
+.nav__link:hover {
+  color: #fff;
+  text-decoration: underline;
 }
 
 .site-header__link-box {
@@ -272,6 +279,13 @@ img {
   text-transform: uppercase;
   color: var(--main-text-color);
   text-decoration: none;
+  -webkit-transition: color 0.4s ease;
+  transition: color 0.4s ease;
+}
+
+.site-header__phone-number:hover {
+  color: #fff;
+  text-decoration: underline;
 }
 
 .site-header__bonus-link {
@@ -281,6 +295,13 @@ img {
   text-transform: uppercase;
   color: var(--main-text-color);
   text-decoration: none;
+  -webkit-transition: color 0.4s ease;
+  transition: color 0.4s ease;
+}
+
+.site-header__bonus-link:hover {
+  color: #fff;
+  text-decoration: underline;
 }
 
 .hero {
@@ -288,6 +309,7 @@ img {
   background-repeat: no-repeat;
   background-position: center top;
   background-size: 100%;
+  padding-bottom: 116px;
 }
 
 .hero__title-wrapper {
@@ -314,14 +336,44 @@ img {
 }
 
 .hero__bonus-link {
+  display: inline-block;
   max-width: 218px;
   width: 100%;
+  margin-right: 16px;
   padding: 14px 10px;
   line-height: 24px;
   color: #fff;
   border: 2px solid var(--main-link-color);
   border-radius: 100px;
+  text-align: center;
   text-decoration: none;
+  background-color: var(--main-link-color);
+  -webkit-transition: background-color 0.4s ease;
+  transition: background-color 0.4s ease;
+}
+
+.hero__bonus-link:hover {
+  border: 2px solid rgba(228, 216, 204, 0.5);
+  background-color: rgba(228, 216, 204, 0.5);
+}
+
+.hero__work-link {
+  display: inline-block;
+  max-width: 170px;
+  width: 100%;
+  padding: 14px 10px;
+  line-height: 24px;
+  color: #fff;
+  border-radius: 100px;
+  text-align: center;
+  text-decoration: none;
+  background-color: rgba(228, 216, 204, 0.5);
+  -webkit-transition: background-color 0.4s ease;
+  transition: background-color 0.4s ease;
+}
+
+.hero__work-link:hover {
+  background-color: var(--main-link-color);
 }
 
 .container {
