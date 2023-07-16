@@ -399,7 +399,7 @@ img {
 }
 
 .sell__inner:nth-child(2) .sell__text {
-  margin-top: 91px;
+  margin-top: 85px;
 }
 
 .sell__deatils {
@@ -423,8 +423,14 @@ img {
   width: 11px;
   height: 12px;
   margin-left: 10px;
+  margin-right: 17px;
   background-image: url("../../images/arrow.svg");
   content: "";
+}
+
+.sell__summary + .sell__desc {
+  font-size: 14px;
+  line-height: 22.08px;
 }
 
 .sell__bonus {
@@ -464,9 +470,36 @@ img {
   -webkit-column-gap: 139px;
      -moz-column-gap: 139px;
           column-gap: 139px;
+  padding-top: 124px;
+  padding-bottom: 101px;
 }
 
 .sell__inner:nth-child(3) .sell__bonus::before {
   background-color: #eba789;
   content: "2";
+}
+
+.sell__inner:nth-child(3) .sell__text {
+  margin-top: 68px;
+}
+
+.sell__inner:last-child {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-column-gap: 117px;
+     -moz-column-gap: 117px;
+          column-gap: 117px;
+  padding-top: 124px;
+  padding-bottom: 101px;
+}
+
+.sell__inner:last-child .sell__bonus::before {
+  background-color: #96dbc6;
+  content: "3";
+}
+
+.sell__inner:last-child .sell__text {
+  margin-top: 68px;
 }/*# sourceMappingURL=main.css.map */
