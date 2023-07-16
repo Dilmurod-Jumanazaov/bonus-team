@@ -1,0 +1,111 @@
+@use "../veriables" as v;
+@use "../mixins" as m;
+
+.site-footer {
+    padding: 78px 0 28px 0;
+    background-color: #101010;
+}
+
+
+.site-footer__question {
+    @include m.layout(flex-start, center);
+    column-gap: 42px;
+    margin-bottom: 86px;
+}
+.site-footer__selling-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.site-footer__selling {
+    @include m.default-text(19px, 23px, 400, 24px, normal);
+    color: v.$main-blocquite-text-color;
+    font-family: v.$main-ff;
+}
+.site-footer__offer {
+    @include m.default-text(0, 16px, 400, 24px, normal);
+    display: inline-block;
+    width: 215px;
+    padding: 9px;
+    border: 1px solid #7837F3;
+    border-radius: 100px;
+    background-color: #7837F3;
+    color: #fffaf5;
+    text-align: center;
+    font-family: v.$main-ff;
+    text-decoration: none;
+}
+.site-footer__support {
+    @include m.default-text(0, 16px, 400, 24px, normal);
+    display: inline-block;
+    width: 251px;
+    padding: 9px;
+    border: 1px solid #e4d8cc;
+    border-radius: 100px;
+    color: #fffaf5;
+    text-align: center;
+    font-family: v.$main-ff;
+    text-decoration: none;
+}
+.site-footer__list-wrapper {
+    @include m.layout(flex-start, flex-start);
+    column-gap: 75px;
+}
+.site-footer__list-span {
+    @include m.default-text(48px, 20px, 400, 16px, normal);
+    display: block;
+    color: v.$main-blocquite-text-color;
+    font-family: v.$main-ff;
+}
+.site-footer__list {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+.site-footer__item:not(:last-child) {
+    margin-bottom: 47px;
+}
+.site-footer__item-link {
+    @include m.default-text(0, 16px, 400, 0.16px, normal);
+    display: block;
+    color: v.$main-blocquite-text-color;
+    font-family: v.$main-ff;
+    text-decoration: none;
+}
+.site-footer__list-big-wrapper {
+    @include m.layout(space-between, flex-end);
+    margin-bottom: 121px;
+}
+.site-footer__desc-list::before {
+    content: "";
+    width: 60px;
+    height: 55px;
+    display: block;
+    background-image: url(../../images/mission-and-footer/smile.svg);
+    background-repeat: no-repeat;
+    margin-bottom: 47px;
+}
+.site-footer__desc-list {
+    @include m.default-text(0, 14px, 400, 28px, normal);
+    margin: 0;
+    color: v.$main-blocquite-text-color;
+    font-family: v.$main-ff;
+}
+.site-footer__hr {
+    margin: 0;
+    background-color: #e4d8cc29;
+}
+.site-footer__socials{
+    @include m.layout(space-between, center);
+    margin-top: 28px;
+}
+.site-footer__social-list {
+    @include m.layout(space-between, center);
+    margin: 0;
+    list-style: none;
+    column-gap: 298px;
+}
+.site-footer__desc-socials{
+    @include m.default-text(0, 11px, 400, 11px, normal);
+    color: #e4d8cc;
+    text-align: right;
+}
