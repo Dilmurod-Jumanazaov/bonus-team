@@ -1,0 +1,90 @@
+@use "../mixins" as m;
+.site-blocquite {
+    padding-top: 116px;
+    padding-bottom: 112px;
+
+    background-color: var(--main-blocquite-backcolor);
+}
+.blockquite__inner {
+    padding-left: 43px;
+    padding-right: 83px;
+}
+.blockquite__list {
+    @include m.layout(space-between, start);
+    @include m.unstyled-list;
+}
+.blockquite__item:first-child {
+    padding-right: 43px;
+    border-right: 1px solid rgba(228, 216, 204, 0.1);
+}
+.blockquite__item:first-child:before {
+    margin: 0 auto;
+    margin-bottom: 48px;
+    background-image: url("/images/blocquite.svg");
+    @include m.psevdo-el(72px, 62px, center);
+}
+.blockquite__item:last-child:before {
+    margin: 0 auto;
+    margin-bottom: 48px;
+    background-image: url("/images/blocquite-green.svg");
+    @include m.psevdo-el(72px, 62px, center);
+}
+.blockquite__desck-first {
+    margin: 0;
+    margin-bottom: 19px;
+    font-family: var(--main-ff);
+    color: var(--main-blocquite-text-color);
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 133.333% */
+}
+.blockquite__desc-last {
+    margin: 0;
+    font-family: var(--main-ff);
+    color: var(--main-blocquite-text-color);
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 133.333% */
+    margin-bottom: 61px;
+}
+.blockquite__wrap-cite {
+    @include m.layout(space-between, center);
+    flex-direction: row;
+    text-align: start;
+}
+
+.blockquite__name-box {
+    @include m.layout(center, start);
+    flex-direction: column;
+    margin-right: auto;
+    text-align: start;
+}
+.blockquite__wrap-cite--last::before {
+    @include m.psevdo-el(73px, 73px, center);
+    background-image: url("/images/jason&satromi.png");
+    margin-left: 82px;
+    margin-right: 29px;
+}
+.blockquite__name-link {
+    display: inline-block;
+    color: var(--main-blocquite-text-color);
+    font-family: var(--main-ff);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 171.429% */
+    text-decoration: none;
+}
+.blockquite__name-box--last {
+    width: 100%;
+}
+
+.blockquite__img-link {
+    display: block;
+    margin: 0 auto;
+    text-decoration: none;
+}

@@ -170,8 +170,10 @@ template {
 }
 :root {
   --main-ff: "Inter", "Arial", sans-serif;
-  --main-text-color: #e4d8cc;
-  --main-link-color: #7837f3;
+  --main-blocquite-backcolor:#fff;
+  --main-blocquite-text-color:#e4d8cc;
+  --main-quistions-bgcolor:#101010;
+  --main-quistions-color:#E4D8CC;
 }
 
 /* General styles */
@@ -554,4 +556,220 @@ img {
 
 .sell__inner:last-child .sell__text {
   margin-top: 68px;
+}
+
+.site-blocquite {
+  padding-top: 116px;
+  padding-bottom: 112px;
+  background-color: var(--main-blocquite-backcolor);
+}
+
+.blockquite__inner {
+  padding-left: 43px;
+  padding-right: 83px;
+}
+
+.blockquite__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.blockquite__item:first-child {
+  padding-right: 43px;
+  border-right: 1px solid rgba(228, 216, 204, 0.1);
+}
+
+.blockquite__item:first-child:before {
+  margin: 0 auto;
+  margin-bottom: 48px;
+  background-image: url("/images/blocquite.svg");
+  display: block;
+  width: 72px;
+  height: 62px;
+  background-image: url(center);
+  background-repeat: no-repeat;
+  background-position: center;
+  content: "";
+}
+
+.blockquite__item:last-child:before {
+  margin: 0 auto;
+  margin-bottom: 48px;
+  background-image: url("/images/blocquite-green.svg");
+  display: block;
+  width: 72px;
+  height: 62px;
+  background-image: url(center);
+  background-repeat: no-repeat;
+  background-position: center;
+  content: "";
+}
+
+.blockquite__desck-first {
+  margin: 0;
+  margin-bottom: 19px;
+  font-family: var(--main-ff);
+  color: var(--main-blocquite-text-color);
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 133.333% */
+}
+
+.blockquite__desc-last {
+  margin: 0;
+  font-family: var(--main-ff);
+  color: var(--main-blocquite-text-color);
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 133.333% */
+  margin-bottom: 61px;
+}
+
+.blockquite__wrap-cite {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-align: start;
+}
+
+.blockquite__name-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: auto;
+  text-align: start;
+}
+
+.blockquite__wrap-cite--last::before {
+  display: block;
+  width: 73px;
+  height: 73px;
+  background-image: url(center);
+  background-repeat: no-repeat;
+  background-position: center;
+  content: "";
+  background-image: url("/images/jason&satromi.png");
+  margin-left: 82px;
+  margin-right: 29px;
+}
+
+.blockquite__name-link {
+  display: inline-block;
+  color: var(--main-blocquite-text-color);
+  font-family: var(--main-ff);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+  text-decoration: none;
+}
+
+.blockquite__name-box--last {
+  width: 100%;
+}
+
+.blockquite__img-link {
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+}
+
+.quistions {
+  padding-top: 100px;
+  padding-bottom: 71px;
+  background-color: var(--main-quistions-bgcolor);
+}
+
+.quistions__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.quistions__list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.quistions__item:first-child {
+  margin-bottom: 45px;
+}
+
+.quistions__item:not(:first-child) {
+  margin-bottom: 52px;
+}
+
+.questions__text {
+  margin: 0;
+  font-family: Inter;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 45.632px;
+  letter-spacing: 1px;
+  color: var(--main-quistions-color);
+}
+
+.quistions__link {
+  color: #B99FEA;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  text-decoration: none;
+}
+
+.mission {
+  display: none;
+}
+
+.site-footer {
+  display: none;
 }/*# sourceMappingURL=main.css.map */

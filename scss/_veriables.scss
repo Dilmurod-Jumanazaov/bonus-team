@@ -1,7 +1,12 @@
-:root {
+:root{
   --main-ff: "Inter", "Arial", sans-serif;
-  --main-text-color: #e4d8cc;
-  --main-link-color: #7837f3;
+  --main-blocquite-backcolor:#fff;
+  --main-blocquite-text-color:#e4d8cc;
+  --main-quistions-bgcolor:#101010;
+  --main-quistions-color:#E4D8CC;
 }
-
 $main-ff: var(--main-ff);
+$main-blocquite-backcolor: var(--main-blocquite-backcolor);
+$main-blocquite-text-color: var(--main-blocquite-text-color);
+$main-quistions-bgcolor: var(--main-quistions-bgcolor);
+$main-quistions-color:var( --main-quistions-color);

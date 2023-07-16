@@ -1,0 +1,51 @@
+@use "../mixins" as m;
+@use "../veriables" as v;
+.quistions {
+    padding-top: 100px;
+    padding-bottom: 71px;
+
+    background-color: v.$main-quistions-bgcolor;
+}
+
+.quistions__inner {
+    @include m.layout;
+    align-items:start;
+    
+}
+.quistions__list {
+    @include m.unstyled-list;
+}
+.quistions__item:first-child{
+    margin-bottom: 45px;
+}
+.quistions__item:not(:first-child) {
+    margin-bottom: 52px;
+}
+.questions__text {
+    margin: 0;
+    font-family: Inter;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 45.632px;
+    letter-spacing: 1px;
+    color: v.$main-quistions-color;
+}
+.quistions__link {
+    color: #B99FEA;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    text-decoration: none;
+ 
+}
+
+.mission {
+    display: none;
+}
+
+.site-footer {
+    display: none;
+}
