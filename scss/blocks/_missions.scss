@@ -1,0 +1,30 @@
+@use "../veriables" as v;
+@use "../mixins" as m;
+
+.mission {
+    padding: 139px 0 98px 0;
+    background-image: url(../../images/mission-and-footer/missionbg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.mission__logo {
+    display: block;
+    margin-bottom: 19px;
+}
+.mission__desc-wrapper {
+    max-width: 666px
+}
+.mission__desc {
+    @include m.default-text (24px, 48px, 400, 54px, normal);
+    color: #e7dfd8;
+    font-family: v.$main-ff;
+}
+.mission__link {
+    @include m.default-text (0px,12px, 400, 20px, 2px);
+    color: #e4d8cc;
+    font-family: v.$main-ff;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #e4d8cc;
+}
